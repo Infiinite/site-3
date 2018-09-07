@@ -14,3 +14,8 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+window.addEventListener("load", function loading(){
+  var loadScreen = document.getElementById('boxFTW')
+  document.body.removeChild(loadScreen);
+})

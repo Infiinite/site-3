@@ -70,6 +70,27 @@ p#lorem{
    text-align:center;
  }
 
+ ul.2-side-by-side{
+   text-align:center;
+ }
+
+ ul.2-side-by-side{
+   display:inline-block;
+ }
+
+ .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
  div.nav ul li{
    margin-bottom:1%;
    margin-top:1%;
@@ -83,6 +104,23 @@ p#lorem{
    color:#fff;
    font-size:20px;
    font-weight:600;
+ }
+
+ .column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+ div.img-content{
+   display:inline-block;
  }
 
  div.nav{
@@ -196,6 +234,12 @@ p#lorem{
 
   div.center{
     text-align:center;
+  }
+
+  div.center-10{
+    text-align:center;
+    margin-right:10%;
+    margin-left:10%;
   }
 
    h1.footer-text{
@@ -343,4 +387,81 @@ html {
     h1#kenmar123{
       font-size:27px;
     }
+}
+
+.logo{
+  font-size:50px;
+  text-align:center;
+  font-family:monospace;
+}
+.spacer{
+  height:100px;
+}
+.box{
+  width:200px;
+  height:200px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.box .b{
+  border-radius:50%;
+  border-left:4px solid;
+  border-right:4px solid;
+  border-bottom:4px solid transparent;
+  border-top:4px solid transparent;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  animation: ro 2s infinite;
+}
+
+.box .b1{
+  border-color:#0984e3;
+  width:120px;
+  height:120px;
+  border-bottom:4px solid transparent;
+  border-top:4px solid transparent;
+  animation-delay:0s;
+}
+.box .b2{
+  border-color:#00cec9;
+  width:110px;
+  height:110px;
+  border-bottom:4px solid transparent;
+  border-top:4px solid transparent;
+  animation-delay:0.2s;
+}
+.box .b3{
+  border-color:#74b9ff;
+  width:100px;
+  height:100px;
+  border-bottom:4px solid transparent;
+  border-top:4px solid transparent;
+  animation-delay:0.4s;
+}
+.box .b4{
+  border-color:#81ecec;
+  width:90px;
+  height:90px;
+  border-bottom:4px solid transparent;
+  border-top:4px solid transparent;
+  animation-delay:0.6s;
+}
+
+@keyframes ro {
+  0%{
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  50%{
+    transform: translate(-50%, -50%) rotate(-180deg);
+  }
+
+  100%{
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
